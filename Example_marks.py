@@ -3,7 +3,7 @@ import numpy as np
 from network import Network
 from fc_layer import FCLayer
 from activation_layer import ActivationLayer
-from activations import tanh, tanh_prime
+from activations import tanh, tanh_prime, sigmoid
 from losses import mse, mse_prime
 
 # training data
