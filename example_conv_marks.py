@@ -16,12 +16,10 @@ y_train = np.array([[[82]], [[94]], [[45]]])
 
 # network
 net = Network()
-#net.add(ConvLayer((10,10,1), (3,3), 1))
-net.add(ConvLayer((3,3,1), (3,3), 1))
+net.add(ConvLayer((3,3,1), (1,1), 1))
 net.add(ActivationLayer(tanh, tanh_prime))
-net.add(ConvLayer((8,8,1), (3,3), 1))
-net.add(ActivationLayer(tanh, tanh_prime))
-net.add(ConvLayer((6,6,1), (3,3), 2))
+
+net.add(ConvLayer((2,2,1), (1,1), 1))
 net.add(ActivationLayer(tanh, tanh_prime))
 
 # train
