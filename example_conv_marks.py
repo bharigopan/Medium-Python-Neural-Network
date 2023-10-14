@@ -14,12 +14,16 @@ y_train = np.array([[[82]], [[94]], [[45]], [[42]], [[32]], [[42]]])
 #x_train = np.array([[[60],[80],[5]],[[70],[75],[7]],[[50],[55],[10]]])
 #y_train = np.array([[[82]], [[94]], [[45]]])
 
+#net.add(ConvLayer((10,10,1), (3,3), 1))
+#net.add(ActivationLayer(tanh, tanh_prime))
+#net.add(ConvLayer((8,8,1), (3,3), 1))
+#net.add(ActivationLayer(tanh, tanh_prime))
+#net.add(ConvLayer((6,6,1), (3,3), 2))
+#net.add(ActivationLayer(tanh, tanh_prime))
+
 # network
 net = Network()
-net.add(ConvLayer((3,6,1), (2,2), 1))
-net.add(ActivationLayer(tanh, tanh_prime))
-
-net.add(ConvLayer((2,2,1), (2,2), 1))
+net.add(ConvLayer((0,6,1), (2,2), 1))
 net.add(ActivationLayer(tanh, tanh_prime))
 
 # train
