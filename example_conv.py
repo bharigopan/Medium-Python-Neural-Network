@@ -7,10 +7,10 @@ from activations import tanh, tanh_prime
 from losses import mse, mse_prime
 
 # training data
-x_train = [np.random.rand(10,10,1)]
-y_train = [np.random.rand(4,4,2)]
-#x_train = np.array([[[60,80,5]], [[70,75,7]], [[50,55,10]], [[40,56,7]], [[40,56,7]], [[40,75,7]]])
-#y_train = np.array([[[82]], [[94]], [[45]], [[42]], [[32]], [[42]]])
+#x_train = [np.random.rand(10,10,1)]
+#y_train = [np.random.rand(4,4,2)]
+x_train = np.array([[[60,80,5]], [[70,75,7]], [[50,55,10]], [[40,56,7]], [[40,56,7]], [[40,75,7]]])
+y_train = np.array([[[82]], [[94]], [[45]], [[42]], [[32]], [[42]]])
 
 
 
