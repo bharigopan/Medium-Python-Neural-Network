@@ -7,8 +7,8 @@ from activations import tanh, tanh_prime, sigmoid, sigmoid_prime
 from losses import mse, mse_prime
 
 # training data
-x_train = np.array([[[60,80]], [[70,75]], [[50,55]], [[40,56]]])
-y_train = np.array([[[82]], [[94]], [[45]], [[42]]])
+x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
+y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
 
 # network
 net = Network()
