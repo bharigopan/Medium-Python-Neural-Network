@@ -14,14 +14,14 @@ from losses import mse, mse_prime
 #x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
 #y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
 
-x_train = np.array([[[60,80,5]], [[70,75,7]], [[50,55,10]], [[40,56,7]]])
-y_train = np.array([[[82]], [[94]], [[45]], [[42]]])
+x_train = np.array([[[60,80,5]], [[70,75,7]], [[50,55,10]], [[40,56,7]], [[40,56,7]], [[40,75,7]]])
+y_train = np.array([[[82]], [[94]], [[45]], [[42]], [[32]], [[42]]])
 
 # network
 net = Network()
-net.add(FCLayer(3, 4))
+net.add(FCLayer(3, 3))
 net.add(ActivationLayer(sigmoid, sigmoid_prime))
-net.add(FCLayer(4, 1))
+net.add(FCLayer(3, 1))
 net.add(ActivationLayer(sigmoid, sigmoid_prime))
 
 # train
