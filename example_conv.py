@@ -9,14 +9,15 @@ from losses import mse, mse_prime
 # training data
 #x_train = [np.random.rand(10,10,1)]
 #y_train = [np.random.rand(4,4,2)]
-x_train = np.array([[[60,80,5]], [[70,75,7]], [[50,55,10]], [[40,56,7]], [[40,56,7]], [[40,75,7]]])
-y_train = np.array([[[82]], [[94]], [[45]], [[42]], [[32]], [[42]]])
-x_train = [array([[[0.44031167],[0.86070567],[0.08639991]],[[0.25391935],[0.24442995],[0.65916873]],[[0.71898313],[0.74089204],[0.64145705]]])]
-
+#x_train = np.array([[[60,80,5]], [[70,75,7]], [[50,55,10]], [[40,56,7]], [[40,56,7]], [[40,75,7]]])
+#y_train = np.array([[[82]], [[94]], [[45]], [[42]], [[32]], [[42]]])
+x_train = np.array([[[60],[80],[5]],[[70],[75],[7]],[[50],[55],[10]]])
+y_train = np.array([[[82]], [[94]], [[45]]])
 
 # network
 net = Network()
-net.add(ConvLayer((10,10,1), (3,3), 1))
+#net.add(ConvLayer((10,10,1), (3,3), 1))
+net.add(ConvLayer((3,3,1), (3,3), 1))
 net.add(ActivationLayer(tanh, tanh_prime))
 net.add(ConvLayer((8,8,1), (3,3), 1))
 net.add(ActivationLayer(tanh, tanh_prime))
