@@ -19,9 +19,9 @@ y_train = np.array([[[82]], [[94]], [[45]], [[42]]])
 
 # network
 net = Network()
-net.add(FCLayer(2, 3))
+net.add(FCLayer(3, 4))
 net.add(ActivationLayer(sigmoid, sigmoid_prime))
-net.add(FCLayer(3, 1))
+net.add(FCLayer(4, 1))
 net.add(ActivationLayer(sigmoid, sigmoid_prime))
 
 # train
