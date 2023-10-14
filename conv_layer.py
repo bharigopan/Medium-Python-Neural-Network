@@ -12,6 +12,7 @@ class ConvLayer(Layer):
     # kernel_shape = (m,n)
     # layer_depth = output_depth
     def __init__(self, input_shape, kernel_shape, layer_depth):
+        print(" input_shape, kernel_shape",  input_shape, kernel_shape, layer_depth)
         self.input_shape = input_shape
         self.input_depth = input_shape[2]
         self.kernel_shape = kernel_shape
