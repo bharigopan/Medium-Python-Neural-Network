@@ -12,14 +12,14 @@ y_train = np.array([[[82]], [[94]], [[45]], [[42]]])
 
 # network
 net = Network()
-net.add(FCLayer(3, 2))
+net.add(FCLayer(3, 3))
 net.add(ActivationLayer(sigmoid, sigmoid_prime))
-net.add(FCLayer(2, 1))
+net.add(FCLayer(3, 1))
 net.add(ActivationLayer(sigmoid, sigmoid_prime))
 
 # train
 net.use(mse, mse_prime)
-net.fit(x_train, y_train, epochs=10000, learning_rate=0.01)
+net.fit(x_train, y_train, epochs=1000, learning_rate=0.01)
 
 # test
 out = net.predict(x_train)
