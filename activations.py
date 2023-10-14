@@ -7,8 +7,8 @@ def tanh(x):
 def tanh_prime(x):
     return 1-np.tanh(x)**2
 
-def sigmoid(x)
+def sigmoid(x):
     return 1.0 / (1.0 + numpy.exp(-x))
 
-def sigmoid_prime(x)
+def sigmoid_prime(x):
     return sigmoid(x) * (1- sigmoid(x))
