@@ -23,7 +23,7 @@ y_train = np.array([[[82]], [[94]], [[45]], [[42]], [[32]], [[42]]])
 
 # network
 net = Network()
-net.add(ConvLayer((6,3,1), (2,2), 1))
+net.add(ConvLayer((6,3), (2,2), 1))
 net.add(ActivationLayer(tanh, tanh_prime))
 
 # train
