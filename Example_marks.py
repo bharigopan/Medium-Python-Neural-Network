@@ -19,7 +19,7 @@ net.add(ActivationLayer(sigmoid, sigmoid_prime))
 
 # train
 net.use(mse, mse_prime)
-net.fit(x_train, y_train, epochs=1000, learning_rate=0.01)
+net.fit(x_train, y_train, epochs=10, learning_rate=0.01)
 
 # test
 out = net.predict(x_train)
