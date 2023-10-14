@@ -12,7 +12,7 @@ y_train = np.array([[[82]], [[94]], [[45]], [[42]]])
 
 # network
 net = Network()
-net.add(FCLayer(2, 3))
+net.add(FCLayer(3, 3))
 net.add(ActivationLayer(tanh, tanh_prime))
 net.add(FCLayer(3, 1))
 net.add(ActivationLayer(tanh, tanh_prime))
