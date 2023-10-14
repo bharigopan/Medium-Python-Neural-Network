@@ -6,3 +6,6 @@ def tanh(x):
 
 def tanh_prime(x):
     return 1-np.tanh(x)**2
+
+def sigmoid(x)
+    return 1.0 / (1.0 + numpy.exp(-x))
